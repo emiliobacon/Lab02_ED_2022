@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj": {}
+    "C:\\Users\\emili\\Desktop\\Lab02_ED_2022\\Lab02\\Lab02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj": {
+    "C:\\Users\\emili\\Desktop\\Lab02_ED_2022\\Lab02\\Lab02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
+        "projectUniqueName": "C:\\Users\\emili\\Desktop\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
         "projectName": "Lab02",
-        "projectPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
+        "projectPath": "C:\\Users\\emili\\Desktop\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
         "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\obj\\",
+        "outputPath": "C:\\Users\\emili\\Desktop\\Lab02_ED_2022\\Lab02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
