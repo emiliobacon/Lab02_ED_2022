@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Lab02.Helpers;
+using Lab02.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,14 +13,15 @@ namespace Lab02.Controllers
     {
         // GET: TeamController
         public ActionResult Index()
-        {
-            return View();
+        { 
+            return View(Data.Instance.TeamList);
         }
 
         // GET: TeamController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            
+            return View(Data.Instance.PlayerList);
         }
 
         // GET: TeamController/Create
@@ -83,5 +86,7 @@ namespace Lab02.Controllers
                 return View();
             }
         }
+
+       
     }
 }

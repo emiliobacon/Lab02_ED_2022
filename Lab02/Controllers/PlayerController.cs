@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Lab02.Helpers;
+using Lab02.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,7 +14,7 @@ namespace Lab02.Controllers
         // GET: PlayerController
         public ActionResult Index()
         {
-            return View();
+            return View(Data.Instance.PlayerList);
         }
 
         // GET: PlayerController/Details/5
