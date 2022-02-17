@@ -14,14 +14,14 @@ namespace Lab02.Controllers
         // GET: TeamController
         public ActionResult Index()
         { 
-            return View(Data.Instance.TeamList);
+            return View();
         }
 
         // GET: TeamController/Details/5
         public ActionResult Details(int id)
         {
-            var model = Data.Instance.TeamList[id];
-            return View(model);
+            
+            return View();
         }
 
         // GET: TeamController/Create
