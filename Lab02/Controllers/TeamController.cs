@@ -47,6 +47,7 @@ namespace Lab02.Controllers
                     CreationDate = int.Parse(collection["CreationDate"]),
                     League = collection["League"],
 
+
                 });
                 return RedirectToAction(nameof(Index));
             }
@@ -100,43 +101,43 @@ namespace Lab02.Controllers
 
         //Importar archivo CSV 
 
-        [HttpPost]
-        public ActionResult Index(HttpPostedFileBase postedFile)
-        {
-            List<TeamModel> customers = new List<TeamModel>();
-            string filePath = string.Empty;
-            if (postedFile != null)
-            {
-                string path = Server.MapPath("~/Uploads/");
-                if (!Directory.Exists(path))
-                {
-                    Directory.CreateDirectory(path);
-                }
+        //[HttpPost]
+        //public ActionResult Index(HttpPostedFileBase postedFile)
+        //{
+        //    List<TeamModel> customers = new List<TeamModel>();
+        //    string filePath = string.Empty;
+        //    if (postedFile != null)
+        //    {
+        //        string path = Server.MapPath("~/Uploads/");
+        //        if (!Directory.Exists(path))
+        //        {
+        //            Directory.CreateDirectory(path);
+        //        }
 
-                filePath = path + Path.GetFileName(postedFile.FileName);
-                string extension = Path.GetExtension(postedFile.FileName);
-                postedFile.SaveAs(filePath);
+        //        filePath = path + Path.GetFileName(postedFile.FileName);
+        //        string extension = Path.GetExtension(postedFile.FileName);
+        //        postedFile.SaveAs(filePath);
 
-                //Read the contents of CSV file.
-                string csvData = System.IO.File.ReadAllText(filePath);
+        //        //Read the contents of CSV file.
+        //        string csvData = System.IO.File.ReadAllText(filePath);
 
-                //Execute a loop over the rows.
-                foreach (string row in csvData.Split('\n'))
-                {
-                    if (!string.IsNullOrEmpty(row))
-                    {
-                        customers.Add(new TeamModel
-                        {
-                            id = Convert.ToInt32(row.Split(',')[0]),
-                            TeamName = row.Split(',')[1],
-                            Coach = row.Split(',')[2]
-                        });
-                    }
-                }
-            }
+        //        //Execute a loop over the rows.
+        //        foreach (string row in csvData.Split('\n'))
+        //        {
+        //            if (!string.IsNullOrEmpty(row))
+        //            {
+        //                customers.Add(new TeamModel
+        //                {
+        //                    id = Convert.ToInt32(row.Split(',')[0]),
+        //                    TeamName = row.Split(',')[1],
+        //                    Coach = row.Split(',')[2]
+        //                });
+        //            }
+        //        }
+        //    }
 
-            return View(customers);
-        }
+        //    return View(customers);
+        //}
 
 
        

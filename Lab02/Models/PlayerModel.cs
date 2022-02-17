@@ -17,7 +17,7 @@ namespace Lab02.Models
 
         public static void Save(PlayerModel model)
         {
-            Data.Instance.playerList.InsertNew(model);
+            Data.Instance.playerList.Add(model);
         }
     }
 }

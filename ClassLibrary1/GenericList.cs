@@ -1,12 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace ClassLibrary1
 {
-    public class GenericList<T> 
+    public class GenericList<T> : IEnumerable <T>
     {
         Node<T> Head;
 
-        public void InsertNew(T value)
+        public void Add(T value)
         {
             Node<T> NewNode = new Node<T>();
             NewNode.data = value;
@@ -19,11 +20,11 @@ namespace ClassLibrary1
 
         }
 
-        void InsertNew(T value, int index)
+        void Add(T value, int index)
         {
             if (index == 0)
             {
-                InsertNew(value);
+                Add(value);
             }
             else
             {
@@ -85,6 +86,21 @@ namespace ClassLibrary1
             }
             //Hay que eliminar el nodo current
             return true;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            Node<T> node = Head;
+            while (node != null)
+            {
+                yield return node.data;
+                node = node.next;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
