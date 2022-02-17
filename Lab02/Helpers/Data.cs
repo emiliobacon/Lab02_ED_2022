@@ -1,5 +1,6 @@
 ﻿using Lab02.Models;
 using System.Collections.Generic;
+using ClassLibrary1;
 
 namespace Lab02.Helpers
 {
@@ -19,19 +20,9 @@ namespace Lab02.Helpers
             }
         }
 
-        public List<TeamModel> TeamList = new List<TeamModel>
-        {
-            new TeamModel
-            {
-                id = 2970,
-                TeamName = "Los Castrosos",
-                Coach = "Don Cangreso",
-                League = "Gold",
-                CreationDate = 10122020,
+        
 
-            }
-
-         };
+      
 
         public List<PlayerModel> PlayerList = new List<PlayerModel>
         {
