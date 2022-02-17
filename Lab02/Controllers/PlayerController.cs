@@ -14,7 +14,7 @@ namespace Lab02.Controllers
         // GET: PlayerController
         public ActionResult Index()
         {
-            return View(Data.Instance.PlayerList);
+            return View();
         }
 
         // GET: PlayerController/Details/5

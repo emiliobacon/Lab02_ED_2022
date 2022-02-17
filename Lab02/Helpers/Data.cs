@@ -20,21 +20,14 @@ namespace Lab02.Helpers
             }
         }
 
-        
-
-      
-
-        public List<PlayerModel> PlayerList = new List<PlayerModel>
+        public GenericList<TeamModel> teamList = new GenericList<TeamModel>
         {
-            new PlayerModel
-            {
-                Name = "Juan",
-                LastName = "Perez",
-                KDA = 12, 
-                CreepScore = 500, 
-                Rol = "Tanque",
-                Team = "Los Castrosos",
-            }
+            
+        };
+
+        public List<TeamModel> modelTeamList = new List<TeamModel>
+        {
+
         };
    }
 

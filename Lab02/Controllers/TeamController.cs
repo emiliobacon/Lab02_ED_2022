@@ -13,8 +13,8 @@ namespace Lab02.Controllers
     {
         // GET: TeamController
         public ActionResult Index()
-        { 
-            return View();
+        {   
+            return View(Data.Instance.teamList);
         }
 
         // GET: TeamController/Details/5
@@ -27,7 +27,7 @@ namespace Lab02.Controllers
         // GET: TeamController/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new TeamModel());
         }
 
         // POST: TeamController/Create
@@ -37,6 +37,15 @@ namespace Lab02.Controllers
         {
             try
             {
+                TeamModel.Save(new TeamModel
+                {
+                    id = int.Parse(collection["id"]),
+                    TeamName = collection["TeamName"],
+                    Coach = collection["Coach"],
+                    CreationDate = int.Parse(collection["CreationDate"]),
+                    League = collection["League"],
+                    
+                });
                 return RedirectToAction(nameof(Index));
             }
             catch

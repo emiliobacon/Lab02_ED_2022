@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using Lab02.Helpers;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Lab02.Models
 {
-    public class TeamModel
+    public class TeamModel 
     {
         public int id { get; set; }
         public string TeamName { get; set; }
@@ -11,7 +12,10 @@ namespace Lab02.Models
         public string League { get; set; }
         public int CreationDate { get; set; }
 
-       
+        public static void Save(TeamModel model)
+        {
+            Data.Instance.teamList.InsertNew(model);
+        }
         public List<TeamMembers> Members { get; set; }
     }
 

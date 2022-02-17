@@ -6,7 +6,7 @@ namespace ClassLibrary1
     {
         Node<T> Head;
 
-        void InsertNew(T value)
+        public void InsertNew(T value)
         {
             Node<T> NewNode = new Node<T>();
             NewNode.data = value;

@@ -152,3 +152,4 @@ C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\Details.cshtml.g.cs
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\Create.cshtml.g.cs
