@@ -20,8 +20,8 @@ namespace Lab02.Controllers
         // GET: TeamController/Details/5
         public ActionResult Details(int id)
         {
-            
-            return View(Data.Instance.PlayerList);
+            var model = Data.Instance.TeamList[id];
+            return View(model);
         }
 
         // GET: TeamController/Create
