@@ -1,11 +1,39 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "CSVLibraryAK.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/CSVLibraryAK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/CSVLibraryAK.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CSVLibraryAK.Core/1.0.0": {
+      "sha512": "cohGNDLZxb82U86VvD43b4q3fJObyvmXpGw3ce/IVlegML5QZ+vBCRP2OnTe9Pi50HEkeblz3pThRAE4Rl0n7w==",
+      "type": "package",
+      "path": "csvlibraryak.core/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "csvlibraryak.core.1.0.0.nupkg.sha512",
+        "csvlibraryak.core.nuspec",
+        "lib/netcoreapp3.1/CSVLibraryAK.Core.dll",
+        "lib/netcoreapp3.1/CSVLibraryAK.Core.xml",
+        "logo-512x512.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "CSVLibraryAK.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\emili\\.nuget\\packages\\": {}
@@ -45,6 +73,12 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "CSVLibraryAK.Core": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

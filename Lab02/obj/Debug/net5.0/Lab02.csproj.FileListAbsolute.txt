@@ -1,0 +1,9 @@
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.csproj.AssemblyReference.cache
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.csproj.ResolveComReference.cache
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.AssemblyInfoInputs.cache
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.AssemblyInfo.cs
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.csproj.CoreCompileInputs.cache
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.RazorAssemblyInfo.cache
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\net5.0\Lab02.RazorAssemblyInfo.cs

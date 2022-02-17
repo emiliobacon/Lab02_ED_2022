@@ -9,6 +9,13 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Team" asp-action="Index" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <hr />
+    <button type ="submit">Cargar</button>
+</form>
+
 <table class="table">
     <thead>
         <tr>

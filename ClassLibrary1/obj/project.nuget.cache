@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QOCuJ8wbytk39A0ognlZ6BJtoXyLyYO5QmIYy6HJswz/TiMiH9AjUes+kAt/SGKLVVYBwls47mrEnBvAiOwLOA==",
+  "dgSpecHash": "dbwHDagXUaD6TiukK6hIgn7uq2uIKUtRtZt8/Qaj33rkvRk5SbMRS/ImKZOKyqrJogmjnMBK2faZPsVskYVfYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\emili\\Desktop\\laboratorio 2\\Lab02_ED_2022\\ClassLibrary1\\ClassLibrary1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\emili\\.nuget\\packages\\csvlibraryak.core\\1.0.0\\csvlibraryak.core.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

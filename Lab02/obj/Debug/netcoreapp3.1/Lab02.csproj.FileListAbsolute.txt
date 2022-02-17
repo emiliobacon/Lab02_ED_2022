@@ -154,3 +154,6 @@ C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\Index.cshtml.g.cs
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Create.cshtml.g.cs
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Index.cshtml.g.cs
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab02.csproj.ResolveComReference.cache
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\bin\Debug\netcoreapp3.1\CSVLibraryAK.Core.dll
+C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\Lab02\bin\Debug\netcoreapp3.1\CsvHelper.dll
