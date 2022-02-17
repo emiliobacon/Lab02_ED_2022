@@ -25,7 +25,10 @@ namespace Lab02.Helpers
             
         };
 
-        
+        public GenericList<PlayerModel> playerList = new GenericList<PlayerModel>
+        {
+            
+        };
    }
 
     

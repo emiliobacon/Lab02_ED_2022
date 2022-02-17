@@ -14,7 +14,7 @@ namespace Lab02.Controllers
         // GET: PlayerController
         public ActionResult Index()
         {
-            return View();
+            return View(Data.Instance.playerList);
         }
 
         // GET: PlayerController/Details/5
@@ -26,7 +26,7 @@ namespace Lab02.Controllers
         // GET: PlayerController/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new PlayerModel());
         }
 
         // POST: PlayerController/Create
@@ -36,6 +36,15 @@ namespace Lab02.Controllers
         {
             try
             {
+                PlayerModel.Save(new PlayerModel
+                {
+                    Name = collection["Name"],
+                    LastName = collection["LastName"],
+                    KDA = int.Parse(collection["KDA"]),
+                    CreepScore = int.Parse(collection["CreepScore"]),
+                    Rol = collection["Rol"],
+                    Team = collection["Team"],
+                });
                 return RedirectToAction(nameof(Index));
             }
             catch
