@@ -25,10 +25,7 @@ namespace Lab02.Helpers
             
         };
 
-        public List<TeamModel> modelTeamList = new List<TeamModel>
-        {
-
-        };
+        
    }
 
     

@@ -1,59 +1,11 @@
-﻿@model IEnumerable<Lab02.Models.TeamModel>
-
+﻿
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
+<h1>Equipos</h1>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TeamName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Coach)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.League)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreationDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeamName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Coach)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.League)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreationDate)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
