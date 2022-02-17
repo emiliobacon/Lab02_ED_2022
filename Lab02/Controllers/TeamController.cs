@@ -100,60 +100,60 @@ namespace Lab02.Controllers
 
         //leer csv 
 
-        //[HttpGet]
+        [HttpGet]
 
-        //public IActionResult Index(GenericList<TeamModel> teams = null)
-        //{
-        //    teams = teams == null ? new GenericList<TeamModel>() : teams;
-        //    return View(teams);
-        //}
+        public IActionResult Index(GenericList<TeamModel> teams = null)
+        {
+            teams = teams == null ? new GenericList<TeamModel>() : teams;
+            return View(teams);
+        }
 
-        //[HttpPost]
-        //public IActionResult Index(IFormFile file, [FromServices] IHostingEnvironment hostingEnvironment)
-        //{
-        //    //upload csv 
-        //    string fileName = $"{ hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
-        //    using (FileStream fileStream = System.IO.File.Create(fileName))
-        //    {
-        //        file.CopyTo(fileStream);
-        //        fileStream.Flush();
-        //    }
-        //    //end
+        [HttpPost]
+        public IActionResult Index(IFormFile file, [FromServices] IHostingEnvironment hostingEnvironment)
+        {
+            //upload csv 
+            string fileName = $"{ hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
+            using (FileStream fileStream = System.IO.File.Create(fileName))
+            {
+                file.CopyTo(fileStream);
+                fileStream.Flush();
+            }
+            //end
 
-        //    var teams = this.GetTeamsList(file.FileName);
-        //    return Index(teams); //cambio aqui
-        //}
+            var teams = this.GetTeamsList(file.FileName);
+            return Index(teams); //cambio aqui
+        }
 
-        //private GenericList<TeamModel> GetTeamsList(string fileName)
-        //{
-        //    GenericList<TeamModel> team = new GenericList<TeamModel>();
+        private GenericList<TeamModel> GetTeamsList(string fileName)
+        {
+            GenericList<TeamModel> team = new GenericList<TeamModel>();
 
-        //    //region 
-        //    var path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\files"}" + "\\" + fileName;
-        //    using (var reader = new StreamReader(path))
-        //    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
-        //    {
-        //        csv.Read();
-        //        csv.ReadHeader();
-        //        while (csv.Read())
-        //        {
-        //            var teams = csv.GetRecord<TeamModel>();
-        //           Data.Instance.teamList.Add(teams); ///////add a la lista doble
-        //        }
-        //    }
-        //    //end region
+            //region 
+            var path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\files"}" + "\\" + fileName;
+            using (var reader = new StreamReader(path))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                csv.Read();
+                csv.ReadHeader();
+                while (csv.Read())
+                {
+                    var teams = csv.GetRecord<TeamModel>();
+                    Data.Instance.teamList.Add(teams); ///////add a la lista doble
+                }
+            }
+            //end region
 
-        //    //create CSV
-        //    path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\FilesTo"}";
-        //    using (var write = new StreamWriter(path + "\\NewFile.csv"))
-        //    using (var csv = new CsvWriter(write, CultureInfo.InvariantCulture))
-        //    {
-        //        csv.WriteRecords(Data.Instance.teamList);
-        //    }
-        //    //end
+            //create CSV
+            path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\FilesTo"}";
+            using (var write = new StreamWriter(path + "\\NewFile.csv"))
+            using (var csv = new CsvWriter(write, CultureInfo.InvariantCulture))
+            {
+                csv.WriteRecords(Data.Instance.teamList);
+            }
+            //end
 
-        //    return Data.Instance.teamList;
-        //}
+            return Data.Instance.teamList;
+        }
 
 
 
