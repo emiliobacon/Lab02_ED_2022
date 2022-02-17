@@ -14,6 +14,15 @@
           "lib/netstandard2.1/CsvHelper.dll": {}
         }
       },
+      "CSVLibraryAK.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/CSVLibraryAK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/CSVLibraryAK.Core.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1866,7 +1875,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "CsvHelper": "27.2.1"
+          "CSVLibraryAK.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ClassLibrary1.dll": {}
@@ -1900,6 +1909,21 @@
         "lib/netstandard2.0/CsvHelper.xml",
         "lib/netstandard2.1/CsvHelper.dll",
         "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
+    "CSVLibraryAK.Core/1.0.0": {
+      "sha512": "cohGNDLZxb82U86VvD43b4q3fJObyvmXpGw3ce/IVlegML5QZ+vBCRP2OnTe9Pi50HEkeblz3pThRAE4Rl0n7w==",
+      "type": "package",
+      "path": "csvlibraryak.core/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "csvlibraryak.core.1.0.0.nupkg.sha512",
+        "csvlibraryak.core.nuspec",
+        "lib/netcoreapp3.1/CSVLibraryAK.Core.dll",
+        "lib/netcoreapp3.1/CSVLibraryAK.Core.xml",
+        "logo-512x512.png"
       ]
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -6301,6 +6325,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CSVLibraryAK.Core >= 1.0.0",
       "ClassLibrary1 >= 1.0.0",
       "CsvHelper >= 27.2.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5"
@@ -6349,6 +6374,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "CSVLibraryAK.Core": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "CsvHelper": {
             "target": "Package",
             "version": "[27.2.1, )"

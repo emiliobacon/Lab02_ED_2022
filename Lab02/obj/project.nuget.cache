@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "d9Sb/s6EiXS5GCiY86wFxrF2Oosz6YI4im1Yd1un3T5PoAqFjJjXM36WQQecfbep1px6PO6k7Mg8W6V3cIEbAg==",
+  "dgSpecHash": "bhPlug0BOh+MiOAru2StmKMTXmEXxgiHTooJCGn8UmA+DUcSOLndkXZtG+1RBa+dW/ilfcWhPwSJpmNl8y77ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\emili\\Desktop\\laboratorio 2\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emili\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
+    "C:\\Users\\emili\\.nuget\\packages\\csvlibraryak.core\\1.0.0\\csvlibraryak.core.1.0.0.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

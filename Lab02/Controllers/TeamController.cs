@@ -1,13 +1,12 @@
-﻿using Lab02.Helpers;
+﻿using ClassLibrary1;
+using Lab02.Helpers;
 using Lab02.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
 using System.IO;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+using CsvHelper;
+using System.Globalization;
 
 namespace Lab02.Controllers
 {
@@ -101,66 +100,62 @@ namespace Lab02.Controllers
 
         //leer csv 
 
-        private IHostingEnvironment Environment;
-        public TeamController(IHostingEnvironment _environment)
-        {
-            Environment = _environment;
-        }
-        
+        //[HttpGet]
 
-        [HttpPost]
-        public IActionResult Index(IFormFile postedFile)
-        {
-            if (postedFile != null)
-            {
-                string path = Path.Combine(this.Environment.WebRootPath, "Uploads");
-                if (!Directory.Exists(path))
-                {
-                    Directory.CreateDirectory(path);
-                }
+        //public IActionResult Index(GenericList<TeamModel> teams = null)
+        //{
+        //    teams = teams == null ? new GenericList<TeamModel>() : teams;
+        //    return View(teams);
+        //}
 
-                string fileName = Path.GetFileName(postedFile.FileName);
-                string filePath = Path.Combine(path, fileName);
-                using (FileStream stream = new FileStream(filePath, FileMode.Create))
-                {
-                    postedFile.CopyTo(stream);
-                }
-                string csvData = System.IO.File.ReadAllText(filePath);
-                DataTable dt = new DataTable();
-                bool firstRow = true;
-                foreach (string row in csvData.Split('\n'))
-                {
-                    if (!string.IsNullOrEmpty(row))
-                    {
-                        if (!string.IsNullOrEmpty(row))
-                        {
-                            if (firstRow)
-                            {
-                                foreach (string cell in row.Split(','))
-                                {
-                                    
-                                    dt.Columns.Add(cell.Trim());
-                                }
-                                firstRow = false;
-                            }
-                            else
-                            {
-                                dt.Rows.Add();
-                                int i = 0;
-                                foreach (string cell in row.Split(','))
-                                {
-                                    dt.Rows[dt.Rows.Count - 1][i] = cell.Trim();
-                                    i++;
-                                }
-                            }
-                        }
-                    }
-                }
+        //[HttpPost]
+        //public IActionResult Index(IFormFile file, [FromServices] IHostingEnvironment hostingEnvironment)
+        //{
+        //    //upload csv 
+        //    string fileName = $"{ hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
+        //    using (FileStream fileStream = System.IO.File.Create(fileName))
+        //    {
+        //        file.CopyTo(fileStream);
+        //        fileStream.Flush();
+        //    }
+        //    //end
 
-                return View(dt);
-            }
+        //    var teams = this.GetTeamsList(file.FileName);
+        //    return Index(teams); //cambio aqui
+        //}
 
-            return View();
-        }
+        //private GenericList<TeamModel> GetTeamsList(string fileName)
+        //{
+        //    GenericList<TeamModel> team = new GenericList<TeamModel>();
+
+        //    //region 
+        //    var path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\files"}" + "\\" + fileName;
+        //    using (var reader = new StreamReader(path))
+        //    using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+        //    {
+        //        csv.Read();
+        //        csv.ReadHeader();
+        //        while (csv.Read())
+        //        {
+        //            var teams = csv.GetRecord<TeamModel>();
+        //           Data.Instance.teamList.Add(teams); ///////add a la lista doble
+        //        }
+        //    }
+        //    //end region
+
+        //    //create CSV
+        //    path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\FilesTo"}";
+        //    using (var write = new StreamWriter(path + "\\NewFile.csv"))
+        //    using (var csv = new CsvWriter(write, CultureInfo.InvariantCulture))
+        //    {
+        //        csv.WriteRecords(Data.Instance.teamList);
+        //    }
+        //    //end
+
+        //    return Data.Instance.teamList;
+        //}
+
+
+
     }
 }

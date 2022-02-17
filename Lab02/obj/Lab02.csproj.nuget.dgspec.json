@@ -40,9 +40,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "CsvHelper": {
+            "CSVLibraryAK.Core": {
               "target": "Package",
-              "version": "[27.2.1, )"
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
@@ -104,6 +104,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "CSVLibraryAK.Core": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "CsvHelper": {
               "target": "Package",
               "version": "[27.2.1, )"
