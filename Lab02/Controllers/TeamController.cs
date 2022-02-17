@@ -1,12 +1,13 @@
 ﻿using Lab02.Helpers;
 using Lab02.Models;
-using ClassLibrary1;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 
 namespace Lab02.Controllers
 {
@@ -14,14 +15,14 @@ namespace Lab02.Controllers
     {
         // GET: TeamController
         public ActionResult Index()
-        {   
+        {
             return View(Data.Instance.teamList);
         }
 
         // GET: TeamController/Details/5
         public ActionResult Details(int id)
         {
-            
+
             return View();
         }
 
@@ -45,7 +46,7 @@ namespace Lab02.Controllers
                     Coach = collection["Coach"],
                     CreationDate = int.Parse(collection["CreationDate"]),
                     League = collection["League"],
-                    
+
                 });
                 return RedirectToAction(nameof(Index));
             }
@@ -96,6 +97,49 @@ namespace Lab02.Controllers
                 return View();
             }
         }
+
+        //Importar archivo CSV 
+
+        [HttpPost]
+        public ActionResult Index(HttpPostedFileBase postedFile)
+        {
+            List<TeamModel> customers = new List<TeamModel>();
+            string filePath = string.Empty;
+            if (postedFile != null)
+            {
+                string path = Server.MapPath("~/Uploads/");
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+
+                filePath = path + Path.GetFileName(postedFile.FileName);
+                string extension = Path.GetExtension(postedFile.FileName);
+                postedFile.SaveAs(filePath);
+
+                //Read the contents of CSV file.
+                string csvData = System.IO.File.ReadAllText(filePath);
+
+                //Execute a loop over the rows.
+                foreach (string row in csvData.Split('\n'))
+                {
+                    if (!string.IsNullOrEmpty(row))
+                    {
+                        customers.Add(new TeamModel
+                        {
+                            id = Convert.ToInt32(row.Split(',')[0]),
+                            TeamName = row.Split(',')[1],
+                            Coach = row.Split(',')[2]
+                        });
+                    }
+                }
+            }
+
+            return View(customers);
+        }
+
+
+       
 
        
     }
