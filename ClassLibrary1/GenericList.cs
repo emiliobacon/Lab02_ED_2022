@@ -2,7 +2,7 @@
 
 namespace ClassLibrary1
 {
-    public class GenericList<T>
+    public class GenericList<T> 
     {
         Node<T> Head;
 
