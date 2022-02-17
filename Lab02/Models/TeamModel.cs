@@ -14,19 +14,11 @@ namespace Lab02.Models
 
         public static void Save(TeamModel model)
         {
-            Data.Instance.teamList.InsertNew(model);
+            Data.Instance.teamList.Add(model);
         }
-        public List<TeamMembers> Members { get; set; }
+        
     }
 
-    public class TeamMembers
-    {
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public string Rol { get; set; }
-        public float KDA { get; set; }
-        public int CreepScore { get; set; }
-        public string Team { get; set; }
-    }
+
 
 }

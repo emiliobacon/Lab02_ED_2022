@@ -22,7 +22,7 @@ namespace Lab02.Helpers
 
         public GenericList<TeamModel> teamList = new GenericList<TeamModel>
         {
-            
+        
         };
 
         public GenericList<PlayerModel> playerList = new GenericList<PlayerModel>
