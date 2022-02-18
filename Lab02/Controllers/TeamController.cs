@@ -105,7 +105,7 @@ namespace Lab02.Controllers
         public IActionResult Index(GenericList<TeamModel> teams = null)
         {
             teams = teams == null ? new GenericList<TeamModel>() : teams;
-            return View(teams);
+            return View(Data.Instance.teamList);
         }
 
         [HttpPost]
