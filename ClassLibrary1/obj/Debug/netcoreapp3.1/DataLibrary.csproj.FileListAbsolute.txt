@@ -1,0 +1,10 @@
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.deps.json
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.dll
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.csproj.AssemblyReference.cache
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfoInputs.cache
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfo.cs
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.dll
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.pdb

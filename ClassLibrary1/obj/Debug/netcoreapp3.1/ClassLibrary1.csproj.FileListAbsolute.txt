@@ -8,3 +8,13 @@ C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\ClassLibrary1\obj\Debug\netco
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.csproj.CoreCompileInputs.cache
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.dll
 C:\Users\emili\Desktop\laboratorio 2\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.pdb
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.deps.json
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.AssemblyInfoInputs.cache
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.AssemblyInfo.cs
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.dll
+C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.pdb

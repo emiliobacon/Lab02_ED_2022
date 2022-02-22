@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using CsvHelper;
 using System.Globalization;
+using System;
 
 namespace Lab02.Controllers
 {
@@ -43,7 +44,7 @@ namespace Lab02.Controllers
                     id = int.Parse(collection["id"]),
                     TeamName = collection["TeamName"],
                     Coach = collection["Coach"],
-                    CreationDate = int.Parse(collection["CreationDate"]),
+                    CreationDate = DateTime.Parse(collection["CreationDate"]),
                     League = collection["League"],
 
 

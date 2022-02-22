@@ -1,11 +1,12 @@
-﻿using Lab02.Helpers;
+﻿using ClassLibrary1;
+using CsvHelper;
+using Lab02.Helpers;
 using Lab02.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.IO;
 
 namespace Lab02.Controllers
 {
@@ -93,6 +94,63 @@ namespace Lab02.Controllers
             {
                 return View();
             }
+        }
+
+        //leer csv 
+
+        [HttpGet]
+
+        public IActionResult Index(GenericList<PlayerModel> players = null)
+        {
+            players = players == null ? new GenericList<PlayerModel>() : players;
+            return View(Data.Instance.playerList);
+        }
+
+        [HttpPost]
+        public IActionResult Index(IFormFile file, [FromServices] IHostingEnvironment hostingEnvironment)
+        {
+            //upload csv 
+            string fileName = $"{ hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
+            using (FileStream fileStream = System.IO.File.Create(fileName))
+            {
+                file.CopyTo(fileStream);
+                fileStream.Flush();
+            }
+            //end
+
+            var players = this.GetPlayerList(file.FileName);
+            return Index(players); //cambio aqui
+        }
+
+        private GenericList<PlayerModel> GetPlayerList(string fileName)
+        {
+            GenericList<PlayerModel> player = new GenericList<PlayerModel>();
+
+            //region 
+            var path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\files"}" + "\\" + fileName;
+            using (var reader = new StreamReader(path))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                csv.Read();
+                csv.ReadHeader();
+                while (csv.Read())
+                {
+                    var players = csv.GetRecord<PlayerModel>();
+                    Data.Instance.playerList.Add(players); ///////add a la lista doble
+                }
+            }
+            //end region
+
+            //create CSV
+            path = $"{Directory.GetCurrentDirectory()}{@"\wwwroot\FilesTo"}";
+            using (var write = new StreamWriter(path + "\\NewFile.csv"))
+            using (var csv = new CsvWriter(write, CultureInfo.InvariantCulture))
+            {
+                csv.WriteRecords(Data.Instance.playerList);
+            }
+            //end
+
+            return Data.Instance.playerList;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Lab02.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -6,13 +7,14 @@ namespace Lab02.Models
 {
     public class TeamModel
     {
+        //new update 22 02 2022 
         public int id { get; set; }
         public string TeamName { get; set; }
         public string Coach { get; set; }
         public string League { get; set; }
-        public int CreationDate { get; set; } //cambiar a tipo fecha 
+        public DateTime CreationDate { get; set; } //cambiar a tipo fecha 
 
-        public List<PlayerModel> Members {get; set;}
+       
 
         public static void Save(TeamModel model)
         {
