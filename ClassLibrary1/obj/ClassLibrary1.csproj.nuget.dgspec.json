@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emili\\Desktop\\laboratorio 2\\Lab02_ED_2022\\ClassLibrary1\\ClassLibrary1.csproj": {}
+    "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emili\\Desktop\\laboratorio 2\\Lab02_ED_2022\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emili\\Desktop\\laboratorio 2\\Lab02_ED_2022\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "C:\\Users\\emili\\Desktop\\laboratorio 2\\Lab02_ED_2022\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectPath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emili\\Desktop\\laboratorio 2\\Lab02_ED_2022\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",
