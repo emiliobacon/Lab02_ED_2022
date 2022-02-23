@@ -20,7 +20,7 @@ namespace ClassLibrary1
 
         }
 
-        void Add(T value, int index)
+        public void Add(T value, int index)
         {
             if (index == 0)
             {
@@ -47,7 +47,7 @@ namespace ClassLibrary1
             }
         }
 
-        int Search(T value)
+        public int Search(T value)
         {
             int count = 0;
             for (Node<T> index = Head; index != null; index = index.next)
@@ -61,7 +61,7 @@ namespace ClassLibrary1
             return -1;
         }
 
-        bool Delete(T value)
+        public bool Delete(T value)
         {
             Node<T> Current = Head;
             int index = Search(value);

@@ -20,6 +20,19 @@ namespace Lab02.Models
         {
             Data.Instance.teamList.Add(model);
         }
+
+        public static bool Edit(int id, TeamModel model)
+        {
+            var position = Data.Instance.teamList.Search(teams => teams.id = id);
+            Data.Instance.teamList[position] = new TeamModel
+            {
+                TeamName = model.TeamName,
+                Coach = model.Coach,
+                CreationDate = model.CreationDate,
+                League = model.League
+            };
+            return true;
+        }
         
     }
    
