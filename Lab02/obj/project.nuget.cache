@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ybAC7uoiLLWXB64y1H4XkO2yieO1dSMskbb+603Mr4a6Ezh6/Yv+fDi8/eilXA8DlANQtjokeBYZNV3g9lNzXw==",
+  "dgSpecHash": "jV/4sAaMQ5b6eNphPtITTFZAyGqfFPQU8pm+I4zg45i1ktoVqHjcqwLdPatxrEGwJw6CyzrXgB7G9u1aIVWuPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
+  "projectFilePath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emili\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\csvlibraryak.core\\1.0.0\\csvlibraryak.core.1.0.0.nupkg.sha512",

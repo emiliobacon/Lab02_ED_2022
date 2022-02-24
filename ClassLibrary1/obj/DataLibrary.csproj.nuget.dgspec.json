@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {}
+    "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
+    "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
         "projectName": "DataLibrary",
-        "projectPath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
+        "projectPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
         "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6337,11 +6337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
+      "projectUniqueName": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
       "projectName": "Lab02",
-      "projectPath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
+      "projectPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
       "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\Lab02\\obj\\",
+      "outputPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6358,8 +6358,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
-              "projectPath": "C:\\Users\\emili\\OneDrive\\Escritorio\\Lab02_ED_2022-main\\Lab02_ED_2022-main\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj"
+            "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
+              "projectPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj"
             }
           }
         }
