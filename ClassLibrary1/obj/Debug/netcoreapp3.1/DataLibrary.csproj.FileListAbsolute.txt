@@ -8,6 +8,7 @@ C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLi
 C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.csproj.CoreCompileInputs.cache
 C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.dll
 C:\Users\emili\OneDrive\Escritorio\Lab02_ED_2022-main\Lab02_ED_2022-main\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.pdb
+<<<<<<< HEAD
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.deps.json
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.dll
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.pdb
@@ -18,3 +19,15 @@ C:\Users\emili\source\repos\2022\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreap
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.csproj.CoreCompileInputs.cache
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.dll
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.pdb
+=======
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.deps.json
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.dll
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\bin\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.csproj.AssemblyReference.cache
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfoInputs.cache
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfo.cs
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.dll
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\ClassLibrary1\obj\Debug\netcoreapp3.1\DataLibrary.pdb
+>>>>>>> main

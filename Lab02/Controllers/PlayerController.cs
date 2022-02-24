@@ -5,13 +5,17 @@ using Lab02.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 
 namespace Lab02.Controllers
 {
     public class PlayerController : Controller
     {
+        
         // GET: PlayerController
         public ActionResult Index()
         {
@@ -39,6 +43,7 @@ namespace Lab02.Controllers
             {
                 PlayerModel.Save(new PlayerModel
                 {
+                    Id = int.Parse(collection["id"]),
                     Name = collection["Name"],
                     LastName = collection["LastName"],
                     KDA = int.Parse(collection["KDA"]),
@@ -57,7 +62,18 @@ namespace Lab02.Controllers
         // GET: PlayerController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            PlayerModel player;
+            int i;
+            for (i = 0; Data.Instance.playerList.Length > i; i++)
+            {
+                player = Data.Instance.playerList.ElementAt(i);
+                if (player.Id == id)
+                {
+                    break;
+                }
+            }
+            player = Data.Instance.playerList.ElementAt(i);
+            return View(player);
         }
 
         // POST: PlayerController/Edit/5
@@ -65,8 +81,24 @@ namespace Lab02.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
         {
+            int i;
             try
             {
+                PlayerModel player;
+
+                for (i = 0; Data.Instance.teamList.Length > i; i++)
+                {
+                    player = Data.Instance.playerList.ElementAt(i);
+
+                    if (player.Id== id)
+                    {
+                        break;
+                    }
+                }
+                player = Data.Instance.playerList.ElementAt(i);
+                player.Rol = collection["Rol"];
+                player.Team = collection["Team"];
+
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -78,7 +110,18 @@ namespace Lab02.Controllers
         // GET: PlayerController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            PlayerModel player;
+            int i;
+            for (i = 0; Data.Instance.playerList.Length > i; i++)
+            {
+                player = Data.Instance.playerList.ElementAt(i);
+                if (player.Id == id)
+                {
+                    break;
+                }
+            }
+            player = Data.Instance.playerList.ElementAt(i);
+            return View(player);
         }
 
         // POST: PlayerController/Delete/5
@@ -86,8 +129,21 @@ namespace Lab02.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
+            int i;
             try
             {
+                PlayerModel player;
+
+                for (i = 0; Data.Instance.playerList.Length > i; i++)
+                {
+                    player = Data.Instance.playerList.ElementAt(i);
+
+                    if (player.Id==id)
+                    {
+                        break;
+                    }
+                }
+                Data.Instance.playerList.DeleteP(i);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -151,6 +207,23 @@ namespace Lab02.Controllers
             //end
 
             return Data.Instance.playerList;
+        }
+
+        public ActionResult SearchPlayer(string search)
+        {
+            
+            ViewData["GetPlayerImplemented"] = search;
+            var player = from x in Data.Instance.playerList select x;
+            if (!String.IsNullOrEmpty(search))
+            {
+                
+                //Delegado
+                player = player.Where(x => x.Name.Contains(search) || x.LastName.Contains(search) ||
+                x.Rol.Contains(search) || x.KDA.ToString().Contains(search) || x.CreepScore.ToString().Contains(search)
+                || x.Team.Contains(search));
+                
+            }
+            return View(player);
         }
     }
 }

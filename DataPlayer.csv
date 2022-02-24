@@ -1,4 +1,4 @@
-Name,LastName,Rol,KDA,CreepScore,Team
-Luis ,Peralta,Tanque,3,120,Maravilla
-Amanda,Ruíz,Healer,4,180,Crisis
-Milaneso,Barillas,DPS,5,220,Gatos
+Id,Name,LastName,Rol,KDA,CreepScore,Team
+1,Luis ,Peralta,Tanque,3,120,Maravilla
+2,Amanda,Ruiz,Healer,4,180,Crisis
+3,Milaneso,Barillas,DPS,5,220,Gatos
