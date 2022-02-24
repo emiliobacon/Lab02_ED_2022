@@ -79,7 +79,7 @@ namespace ClassLibrary1
             return default(T);
         }
 
-        bool Delete(T value)
+        public bool Delete(T value)
         {
             Node<T> Current = Head;
             int index = Search(value);

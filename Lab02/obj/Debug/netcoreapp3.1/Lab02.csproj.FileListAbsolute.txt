@@ -382,8 +382,6 @@ C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab02.RazorCoreGenerate.cache
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Create.cshtml.g.cs
-C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Index.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -403,3 +401,7 @@ C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Raz
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\SearchTeam.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\Edit.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\Delete.cshtml.g.cs
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Edit.cshtml.g.cs
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Delete.cshtml.g.cs
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Index.cshtml.g.cs
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\Create.cshtml.g.cs
