@@ -1,14 +1,13 @@
 ﻿@model Lab02.Models.TeamModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Details";
 }
 
-<h1>Elimar Equipo</h1>
-
+<h1>Details</h1>
 
 <div>
-    <h4>Equipo a eliminar...</h4>
+    <h4>TeamModel</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -42,9 +41,8 @@
             @Html.DisplayFor(model => model.CreationDate)
         </dd>
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-        <a asp-action="Index">Regresar</a>
-    </form>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
 </div>

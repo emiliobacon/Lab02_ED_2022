@@ -30,6 +30,16 @@ namespace Lab02.Helpers
         {
             
         };
+
+        public List<PlayerModel> playerCList = new List<PlayerModel>
+        {
+
+        };
+
+        public List<TeamModel> teamCList = new List<TeamModel>
+        {
+            
+        };
    }
 
     

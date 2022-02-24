@@ -1,21 +1,20 @@
-﻿
-@model Lab02.Models.TeamModel
+﻿@model Lab02.Models.TeamModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 
-<h1>Crear Nuevo Equipo</h1>
+<h1>Edit</h1>
 
-
+<h4>TeamModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="id" class="control-label"></label>
-                <input asp-for="id" class="form-control" />
+                @Html.DisplayFor(model => model.id)
                 <span asp-validation-for="id" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -39,14 +38,14 @@
                 <span asp-validation-for="CreationDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Crear" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Regresar a la Lista</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

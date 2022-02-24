@@ -46,7 +46,7 @@ namespace Lab02.Controllers
                     Id = int.Parse(collection["id"]),
                     Name = collection["Name"],
                     LastName = collection["LastName"],
-                    KDA = int.Parse(collection["KDA"]),
+                    KDA = decimal.Parse(collection["KDA"]),
                     CreepScore = int.Parse(collection["CreepScore"]),
                     Rol = collection["Rol"],
                     Team = collection["Team"],

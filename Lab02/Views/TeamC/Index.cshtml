@@ -4,32 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Equipos</h1>
+<h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Crear Nuevo Equipo</a>
+    <a asp-action="Create">Create New</a>
 </p>
-<hr />
-<p>
-    <b>Cargar Equipo desde CSV</b>
-</p>
-<form asp-controller="Team" asp-action="Index" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" />
-   <br />
-   <br />
-    <button type ="submit">Cargar</button>
-    <hr />
-</form>
-<b>Buscar Equipos</b>
-<form asp-action="SearchTeam">
-    <br />
-    <p>
-        <input type="search" placeholder="Ingrese nombre, entrenador, fecha o liga..." value="@ViewData["GetPlayerImplemented"]" name="search" style="width:400px;" />
-        <input type="submit" value="Buscar" class="btn btn-outline-primary" />
-    </p>
-
-</form>
-
 <table class="table">
     <thead>
         <tr>
@@ -70,8 +49,9 @@
                 @Html.DisplayFor(modelItem => item.CreationDate)
             </td>
             <td>
-                @Html.ActionLink("Editar", "Edit", new { id= item.id }) |
-                @Html.ActionLink("Eliminar", "Delete", new {id=item.id })
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
 }
