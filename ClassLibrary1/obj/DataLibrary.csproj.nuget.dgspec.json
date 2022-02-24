@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {}
+    "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
+    "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
         "projectName": "DataLibrary",
-        "projectPath": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
-        "packagesPath": "C:\\Users\\megan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
+        "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\megan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
