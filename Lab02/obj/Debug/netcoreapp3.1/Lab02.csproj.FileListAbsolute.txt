@@ -532,3 +532,8 @@ C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab02.dll
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab02.pdb
 C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab02.genruntimeconfig.cache
+C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\TeamC\Index.cshtml.g.cs
+C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\TeamC\Details.cshtml.g.cs
+C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\TeamC\Create.cshtml.g.cs
+C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\TeamC\Edit.cshtml.g.cs
+C:\Users\emili\source\repos\2022\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\TeamC\Delete.cshtml.g.cs

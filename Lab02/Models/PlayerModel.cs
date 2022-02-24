@@ -18,7 +18,7 @@ namespace Lab02.Models
         [Required]
         public string Rol { get; set; }
         [Required]
-        public float KDA { get; set; }
+        public decimal KDA { get; set; }
         [Required]
         public int CreepScore { get; set; }
         [Required]
