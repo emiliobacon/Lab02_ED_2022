@@ -109,15 +109,18 @@ namespace Lab02.Controllers
         // GET: TeamController/Delete/5
         public ActionResult Delete(int id)
         {
-            //for (int i = 0; i < Data.Instance.teamList.Length; i++)
-            //{
-            //    if (id== Data.Instance.teamList.SearchObject(i).id)
-            //    {
-            //        Data.Instance.teamList.ExtraerEnPosicion(i);
-            //        break;
-            //    }
-            //}
-            return View();
+            TeamModel teeam;
+            int i;
+            for (i = 0; Data.Instance.teamList.Length > i; i++)
+            {
+                teeam = Data.Instance.teamList.ElementAt(i);
+                if (teeam.id == id)
+                {
+                    break;
+                }
+            }
+            teeam = Data.Instance.teamList.ElementAt(i);
+            return View(teeam);
         }
 
         // POST: TeamController/Delete/5
@@ -125,26 +128,27 @@ namespace Lab02.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {
-            //int i;
-            //try
-            //{
-            //    TeamModel team;
-            //    for (i = 0; Data.Instance.teamList.Length > i; i++)
-            //    {
-            //        team = Data.Instance.teamList.ElementAt(i);
-            //        if (team.id == id)
-            //        {
-            //            break;
-            //        }
-            //    }
-            //    Data.Instance.teamList.Delete(team);
+            int i;
+            try
+            {
+                TeamModel teeam;
 
-            //    return RedirectToAction(nameof(Implementedlist));
-            //}
-            //catch
-            //{
-            return View();
-            //}
+                for (i = 0; Data.Instance.teamList.Length > i; i++)
+                {
+                    teeam = Data.Instance.teamList.ElementAt(i);
+
+                    if (teeam.id == id)
+                    {
+                        break;
+                    }
+                }
+                Data.Instance.teamList.DeleteP(i);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
         }
 
         //leer csv 

@@ -402,3 +402,4 @@ C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\SearchPlayer.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\SearchTeam.cshtml.g.cs
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\Edit.cshtml.g.cs
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\Delete.cshtml.g.cs

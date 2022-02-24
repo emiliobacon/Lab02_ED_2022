@@ -79,13 +79,6 @@ namespace ClassLibrary1
             return default(T);
         }
 
-        //public void ExtractElement(int index)
-        //{
-        //    Node<T> CurrentNode = SearchObject(index);
-
-
-        //}
-
         bool Delete(T value)
         {
             Node<T> Current = Head;
@@ -114,6 +107,33 @@ namespace ClassLibrary1
             this.Length--;
         }
 
+        public bool DeleteP(int index)
+        {
+            Node<T> Current = Head;
+            
+            if (index == -1)
+            {
+                return false;
+            }
+            else if (index == 0)
+            {
+                Current = Head;
+                Head.next.previous = null;
+                Head = Head.next;
+            }
+            else
+            {
+                for (int i = 0; i < index; i++)
+                {
+                    Current = Current.next;
+                }
+                Current.previous.next = Current.next;
+                Current.next.previous = Current.previous;
+            }
+            //Hay que eliminar el nodo current
+            return true;
+            this.Length--;
+        }
         //public IEnumerator<T> GetEnumerator()
         //{
         //    Node<T> node = Head;
