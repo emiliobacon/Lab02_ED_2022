@@ -5,13 +5,19 @@ using Lab02.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 
 namespace Lab02.Controllers
 {
     public class PlayerController : Controller
     {
+        public static string log;
+
+        Stopwatch stopwatch = new Stopwatch();
         // GET: PlayerController
         public ActionResult Index()
         {
@@ -151,6 +157,23 @@ namespace Lab02.Controllers
             //end
 
             return Data.Instance.playerList;
+        }
+
+        public ActionResult SearchPlayer(string search)
+        {
+            
+            ViewData["GetPlayerImplemented"] = search;
+            var playerRequest = from x in Data.Instance.playerList select x;
+            if (!String.IsNullOrEmpty(search))
+            {
+                
+                //Delegado
+                playerRequest = playerRequest.Where(x => x.Name.Contains(search) || x.LastName.Contains(search) ||
+                x.Rol.Contains(search) || x.KDA.ToString().Contains(search) || x.CreepScore.ToString().Contains(search)
+                || x.Team.Contains(search));
+                
+            }
+            return View(playerRequest);
         }
     }
 }

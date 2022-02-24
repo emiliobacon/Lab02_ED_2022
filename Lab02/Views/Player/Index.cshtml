@@ -12,8 +12,15 @@
     <input type="file" name="file" />
     <hr />
     <button type="submit">Cargar</button>
-</form>
 
+</form>
+<form asp-action="SearchPlayer">
+    <p>
+        <input type="search" placeholder="Type name, last name, rol, KDA, Creep score or team..." value="@ViewData["GetPlayerImplemented"]" name="search" style="width:400px;" />
+        <input type="submit" value="Search" class="btn btn-outline-primary" />
+    </p>
+
+</form>
 
 <table class="table">
     <thead>
@@ -42,30 +49,31 @@
     <tbody>
         @foreach (var item in Model)
         {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.Name)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.LastName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Rol)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.KDA)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.CreepScore)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Team)
-    </td>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-    </td>
-</tr>}
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rol)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KDA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreepScore)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Team)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+}
     </tbody>
 </table>

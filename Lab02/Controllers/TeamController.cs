@@ -8,6 +8,7 @@ using System.IO;
 using CsvHelper;
 using System.Globalization;
 using System;
+using System.Linq;
 
 namespace Lab02.Controllers
 {
@@ -155,7 +156,21 @@ namespace Lab02.Controllers
 
             return Data.Instance.teamList;
         }
+        public ActionResult SearchTeam(string search)
+        {
 
+            ViewData["GetPlayerImplemented"] = search;
+            var team = from x in Data.Instance.teamList select x;
+            if (!String.IsNullOrEmpty(search))
+            {
+
+                //Delegado
+                team = team.Where(x => x.TeamName.Contains(search) || x.Coach.Contains(search) ||
+                x.League.Contains(search) || x.CreationDate.ToString().Contains(search) || x.id.ToString().Contains(search));
+
+            }
+            return View(team);
+        }
 
 
     }
