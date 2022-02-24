@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace ClassLibrary1
 {
-    public class GenericList<T> : IEnumerable <T>
+    public class GenericList<T> : IEnumerable<T>, IEnumerable
     {
         Node<T> Head;
+        public int Length = 0;
 
         public void Add(T value)
         {
@@ -17,7 +18,7 @@ namespace ClassLibrary1
                 Head.previous = NewNode;
             }
             Head = NewNode;
-
+            this.Length++;
         }
 
         void Add(T value, int index)
@@ -61,6 +62,30 @@ namespace ClassLibrary1
             return -1;
         }
 
+        public T SearchObject(int index)
+        {
+            if (index >= 0 && index < Length)
+            {
+                Node<T> CurrentNode = Head;
+                int ubicacion = 0;
+
+                while (ubicacion < index)
+                {
+                    CurrentNode = CurrentNode.next;
+                    ubicacion++;
+                }
+                return CurrentNode.data;
+            }
+            return default(T);
+        }
+
+        //public void ExtractElement(int index)
+        //{
+        //    Node<T> CurrentNode = SearchObject(index);
+
+
+        //}
+
         bool Delete(T value)
         {
             Node<T> Current = Head;
@@ -86,21 +111,89 @@ namespace ClassLibrary1
             }
             //Hay que eliminar el nodo current
             return true;
+            this.Length--;
         }
 
-        public IEnumerator<T> GetEnumerator()
+        //public IEnumerator<T> GetEnumerator()
+        //{
+        //    Node<T> node = Head;
+        //    while (node != null)
+        //    {
+        //        yield return node.data;
+        //        node = node.next;
+        //    }
+        //}
+
+        //IEnumerator IEnumerable.GetEnumerator()
+        //{
+        //    return GetEnumerator();
+        //}
+
+        private GenericList<T>.LinkedListEnumerator GetEnumerator()
         {
-            Node<T> node = Head;
-            while (node != null)
-            {
-                yield return node.data;
-                node = node.next;
-            }
+            return new LinkedListEnumerator(this.Head, this.Length);
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return (IEnumerator<T>)this.GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return GetEnumerator();
+            return (IEnumerator)this.GetEnumerator();
+        }
+
+        public struct LinkedListEnumerator : IEnumerator<T>, IEnumerator
+        {
+            private Node<T> head;
+            private Node<T> currentLink;
+            private int length;
+            private bool startedFlag;
+
+            public LinkedListEnumerator(Node<T> head, int length)
+            {
+                this.head = head;
+                this.currentLink = null;
+                this.length = length;
+                this.startedFlag = false;
+            }
+
+            public T Current
+            {
+                get { return this.currentLink.data; }
+            }
+
+            public void Dispose()
+            {
+                this.head = null;
+                this.currentLink = null;
+            }
+
+            object IEnumerator.Current
+            {
+                get { return this.currentLink.data; }
+            }
+
+            public bool MoveNext()
+            {
+                if (this.startedFlag == false)
+                {
+                    this.currentLink = this.head;
+                    this.startedFlag = true;
+                }
+                else
+                {
+                    this.currentLink = this.currentLink.next;
+                }
+
+                return this.currentLink != null;
+            }
+
+            public void Reset()
+            {
+                this.currentLink = this.head;
+            }
         }
     }
 }

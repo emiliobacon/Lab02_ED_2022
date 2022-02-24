@@ -8,6 +8,6 @@ namespace Lab02.Helpers
 {
     public class Search
     {
-       
+        
     }
 }
