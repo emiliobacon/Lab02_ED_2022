@@ -28,10 +28,5 @@ namespace Lab02.Models
         {
             Data.Instance.playerList.Add(model);
         }
-
-        public static void Delete(PlayerModel model)
-        {
-            Data.Instance.playerList.Delete(model);
-        }
     }
 }

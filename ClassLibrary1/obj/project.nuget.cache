@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7vzci0ZJ+nh6L86vj+/yWFXbGlDVi05eF9ECh/7eT19p39zrMSxfv+pWlIxel6GWRRys6vUAc5YsT2tSjmuUrQ==",
+  "dgSpecHash": "BvwX2SCsVYV9NjO+SMfpDS7Ka8BefyoEX/zW0+mJBZYt+BPkuO5BzRFJOevXz6nSZ4C4wON2X3LkYqH38pTwSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
+  "projectFilePath": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\emili\\.nuget\\packages\\csvlibraryak.core\\1.0.0\\csvlibraryak.core.1.0.0.nupkg.sha512"
+    "C:\\Users\\megan\\.nuget\\packages\\csvlibraryak.core\\1.0.0\\csvlibraryak.core.1.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

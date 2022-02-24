@@ -6332,19 +6332,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emili\\.nuget\\packages\\": {}
+    "C:\\Users\\megan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
+      "projectUniqueName": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
       "projectName": "Lab02",
-      "projectPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
-      "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\obj\\",
+      "projectPath": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\Lab02\\Lab02.csproj",
+      "packagesPath": "C:\\Users\\megan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\Lab02\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\megan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6358,8 +6363,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
-              "projectPath": "C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj"
+            "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj": {
+              "projectPath": "C:\\Users\\megan\\Desktop\\ramanueva\\Lab02_ED_2022\\ClassLibrary1\\DataLibrary.csproj"
             }
           }
         }
@@ -6405,16 +6410,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\emili\\source\\repos\\2022\\Lab02_ED_2022\\Lab02\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

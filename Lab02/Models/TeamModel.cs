@@ -25,11 +25,6 @@ namespace Lab02.Models
         {
             Data.Instance.teamList.Add(model);
         }
-
-        public static bool Edit(int id, TeamModel model)
-        {
-            return true;
-        }
         
     }
    

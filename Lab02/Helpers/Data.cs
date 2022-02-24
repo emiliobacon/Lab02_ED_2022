@@ -26,11 +26,6 @@ namespace Lab02.Helpers
         
         };
 
-        public List<TeamModel> equipos = new List<TeamModel>
-        {
-
-        };
-
         public GenericList<PlayerModel> playerList = new GenericList<PlayerModel>
         {
             

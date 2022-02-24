@@ -21,7 +21,7 @@ namespace ClassLibrary1
             this.Length++;
         }
 
-        public void Add(T value, int index)
+        void Add(T value, int index)
         {
             if (index == 0)
             {
@@ -48,7 +48,7 @@ namespace ClassLibrary1
             }
         }
 
-        public int Search(T value)
+        int Search(T value)
         {
             int count = 0;
             for (Node<T> index = Head; index != null; index = index.next)
@@ -62,8 +62,6 @@ namespace ClassLibrary1
             return -1;
         }
 
-<<<<<<< HEAD
-=======
         public T SearchObject(int index)
         {
             if (index >= 0 && index < Length)
@@ -81,7 +79,6 @@ namespace ClassLibrary1
             return default(T);
         }
 
->>>>>>> main
         public bool Delete(T value)
         {
             Node<T> Current = Head;
