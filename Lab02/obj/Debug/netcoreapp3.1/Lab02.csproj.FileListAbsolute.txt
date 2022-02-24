@@ -400,3 +400,4 @@ C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab02.pdb
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Lab02.genruntimeconfig.cache
 C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Player\SearchPlayer.cshtml.g.cs
+C:\Users\megan\Desktop\ramanueva\Lab02_ED_2022\Lab02\obj\Debug\netcoreapp3.1\Razor\Views\Team\SearchTeam.cshtml.g.cs

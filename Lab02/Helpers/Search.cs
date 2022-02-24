@@ -8,9 +8,6 @@ namespace Lab02.Helpers
 {
     public class Search
     {
-        void searchTeam(List<TeamModel> list)
-        {
-
-        }
+       
     }
 }

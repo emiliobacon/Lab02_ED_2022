@@ -166,14 +166,12 @@ namespace Lab02.Controllers
             var playerRequest = from x in Data.Instance.playerList select x;
             if (!String.IsNullOrEmpty(search))
             {
-                stopwatch.Restart();
-                stopwatch.Start();
+                
                 //Delegado
                 playerRequest = playerRequest.Where(x => x.Name.Contains(search) || x.LastName.Contains(search) ||
                 x.Rol.Contains(search) || x.KDA.ToString().Contains(search) || x.CreepScore.ToString().Contains(search)
                 || x.Team.Contains(search));
-                stopwatch.Stop();
-                log += "Time elapsed on searching on handcrafted list: " + stopwatch.Elapsed.TotalMilliseconds.ToString() + "\n";
+                
             }
             return View(playerRequest);
         }
